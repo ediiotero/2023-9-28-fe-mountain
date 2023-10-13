@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 HTML</title>
+</head>
+<body>
+    <h1>Hello!!</h1>
+    <h2>Hello!!</h2>
+    <h3>Hello!!</h3>
+    <h4>Hello!!</h4>
+    <h5>Hello!!</h5>
+    <h6>Hello!!</h6>
+
+    <nav>
+        <a href="page.html">Go to page 2</a>
+    </nav>
+
+    <main>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem accusamus ullam, repellat ab tenetur voluptas est dolores perspiciatis dolorem cupiditate totam itaque qui blanditiis sit laborum quod fugiat? Quod, esse?
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem accusamus ullam, repellat ab tenetur voluptas est dolores perspiciatis dolorem cupiditate totam itaque qui blanditiis sit laborum quod fugiat? Quod, esse?
+        </p>
+
+        <form>
+            <div>
+                <label>Name</label>
+                <input type="text" name="name">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            br
+            <div>
+                <label>Password</label>
+                <input type="password" name="password">
+            </div>
+            <br>
+            <div>
+                <label >Message</label>
+                <textarea name="message" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label>Color</label>
+                <select name="color">
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            <br>
+            <input type="submit" name="submit" onclick="onSubmit()">
+        </form>
+
+        <img width="300" src="https://i.scdn.co/image/3fb9fb7e2c4ae8bbfb5b3343e03fcbc77c40b8a1" alt="sponge bob">
+
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>123abc</td>
+                <td>123abc</td>
+                <td>123abc</td>
+            </tr>
+        </table>
+    </main> 
+    
+    <script>
+        function onSubmit() {
+            alert('The form as been submitted')
+        }
+    </script>
+
+   
+</body>
+</html>
