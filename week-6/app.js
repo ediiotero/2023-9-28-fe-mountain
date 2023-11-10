@@ -8,6 +8,15 @@ const questions = [
     "What city are you in?"
 ];
 
+const answers = [];
+
+// for (let i = 0; i < questions.length; i++) {
+//     var a = prompt(questions[i])
+//     answers.push(a)
+// }
+
+// alert(answers)
+
 
 // =====================
 
@@ -16,6 +25,20 @@ const questions = [
 // Return the new array
 
 const num = [2,5,9,10,23];
+
+function getNum(numAry) {
+    var noOdd = numAry.filter(function(number){
+        return number % 2 === 0
+    })
+
+    var multiNum = noOdd.map(function(number){
+        return number*3
+    })
+
+    return multiNum
+}
+
+console.log(getNum(num))
 
 
 // ===================
