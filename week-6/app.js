@@ -10,13 +10,12 @@ const questions = [
 
 const answers = [];
 
-// for (let i = 0; i < questions.length; i++) {
-//     var a = prompt(questions[i])
-//     answers.push(a)
-// }
+for (let i = 0; i < questions.length; i++) {
+    var a = prompt(questions[i])
+    answers.push(a)
+}
 
-// alert(answers)
-
+alert(answers)
 
 // =====================
 
@@ -30,7 +29,6 @@ function getNum(numAry) {
     var noOdd = numAry.filter(function(number){
         return number % 2 === 0
     })
-
     var multiNum = noOdd.map(function(number){
         return number*3
     })
@@ -39,7 +37,6 @@ function getNum(numAry) {
 }
 
 console.log(getNum(num))
-
 
 // ===================
 
@@ -51,13 +48,37 @@ console.log(getNum(num))
 // To convert C to F: Divide by 5, then multiply by 9, then add 32
 // To convert F to C: Deduct 32, then multiply by 5, then divide by 9
 
+function cToF(celsius) {
+    var toFahrenheit = (celsius*9)/5+32
+    console.log(celsius + "C " + toFahrenheit + "F")
+}
 
+function ftoC(fahrenheit) {
+    var toCelsius = ((fahrenheit -32)*5)/9
+    console.log(fahrenheit + "F " + toCelsius.toFixed(2) + "C")
+}
+
+cToF(20)
+ftoC(20)
 
 //   ========================
 
 // Write a function will find the longest word in the array
 
 var words = ["cat", "pizza", "javascript"]
+
+var test = function(wordAry){
+    var currentWord = '';
+    wordAry.forEach(function(word){
+        if(currentWord.length < word.length){
+            currentWord = word;
+        }
+    });
+
+    return currentWord;
+}
+
+console.log(test(words))
 
 // =============================
 
@@ -66,3 +87,15 @@ var words = ["cat", "pizza", "javascript"]
 // ex: 'The Batman' should return 'thbtmn'
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+
+var test = function(word) {
+    var vowels = ['a', 'e', 'i', 'o', 'u'];
+    var wordAry = word.toLowerCase().split('').filter(function(letter) {
+      return letter !== " "
+    });
+    var noVowels = wordAry.filter(letter => !vowels.includes(letter))
+   
+    return noVowels.join('');
+  };
+  
+  console.log(test('The Batman'));
