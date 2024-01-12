@@ -3,10 +3,7 @@ const email = document.getElementById('email')
 const name = document.getElementById('name')
 const content = document.getElementById('content')
 
-const emailInfo = [
-    {email: 'test@email.com', name: 'Eddie'},
-    {email: 'email@email.com', name: 'Tobi'},
-]
+
 
 const buildInfoList = () => {
     content.innerHTML = ''

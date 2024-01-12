@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 6,
+      "title": "Getting Started with React",
+      "author": "Jessica Shoemaker"
+    },
+    {
+      "id": 7,
+      "title": "Fursuits",
+      "author": "David Sath"
+    },
+    {
+      "title": "testing",
+      "author": "testing author",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "title": "test update",
+      "author": "update auth"
+    },
+    {
+      "id": 11,
+      "title": "Put Request",
+      "author": "Eddie"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
