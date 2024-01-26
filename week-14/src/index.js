@@ -8,6 +8,7 @@ import StateCounter from './routes/StateCounter';
 import StateColor from './routes/StateColor';
 import StateSample from './routes/StateSample';
 import ClickWord from './routes/ClickWord';
+import PropSample from './routes/PropSample';
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -18,6 +19,7 @@ ReactDOM.render(
         <Route path="count" element={<StateCounter />}/>
         <Route path="sample" element={<StateSample />}/>
         <Route path="word" element={<ClickWord />}/>
+        <Route path="props" element={<PropSample />}/>
       </Routes>
     </BrowserRouter>,
   rootElement
